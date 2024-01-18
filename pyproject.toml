@@ -41,7 +41,7 @@ check = "task check_mypy && task check_ruff"
 check_mypy = "mypy ."
 check_ruff = "ruff check"
 fmt = "ruff check --fix"
-test = "pytest --cov"
+test = "pytest --cov --cov-report=xml"
 dev_server = "uvicorn kumo_server:api --reload"
 
 [tool.mypy]
